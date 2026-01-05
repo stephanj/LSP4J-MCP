@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <!-- Log to file only - stdout is used for MCP protocol -->
+    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+        <file>${LOG_FILE:-/tmp/lsp4j-mcp.log}</file>
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Our code at DEBUG level -->
+    <logger name="com.devoxx.lsp4jmcp" level="DEBUG"/>
+
+    <!-- JDTLS and LSP4J can be noisy -->
+    <logger name="org.eclipse.lsp4j" level="INFO"/>
+    <logger name="org.eclipse.jdt" level="INFO"/>
+
+    <root level="INFO">
+        <appender-ref ref="FILE"/>
+    </root>
+</configuration>

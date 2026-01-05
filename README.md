@@ -184,6 +184,16 @@ The server:
 3. Exposes LSP features as MCP tools
 4. Communicates with Claude Code via MCP protocol
 
+## Examples using Claude Code
+
+<img width="896" height="699" alt="Screenshot 2026-01-05 at 12 36 32" src="https://github.com/user-attachments/assets/1267f89c-e70c-4be0-9894-fed1dd387364" />
+
+<img width="1656" height="465" alt="Screenshot 2026-01-05 at 13 43 55" src="https://github.com/user-attachments/assets/6974fd07-4d20-47ba-9aa8-79e89024e355" />
+
+<img width="1656" height="225" alt="Screenshot 2026-01-05 at 13 44 02" src="https://github.com/user-attachments/assets/e6ae4175-db81-4114-b4de-ef8aa6574723" />
+
+<img width="1249" height="581" alt="Screenshot 2026-01-05 at 12 34 09" src="https://github.com/user-attachments/assets/00d6932a-7cf8-4e4c-903d-b78bd597b188" />
+
 ## License
 
 MIT

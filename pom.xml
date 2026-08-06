@@ -25,15 +25,16 @@
         <gson.version>2.11.0</gson.version>
         <slf4j.version>2.0.16</slf4j.version>
         <logback.version>1.5.12</logback.version>
-        <junit.version>5.11.3</junit.version>
+        <junit.version>6.1.2</junit.version>
         <assertj.version>3.27.7</assertj.version>
-        <mockito.version>5.14.2</mockito.version>
+
+        <mockito.version>5.23.0</mockito.version>
         <byte-buddy.version>1.18.11</byte-buddy.version>
 
         <maven-plugin-clean.version>3.2.0</maven-plugin-clean.version>
         <maven-plugin-resources.version>3.4.0</maven-plugin-resources.version>
         <maven-plugin-compiler.version>3.13.0</maven-plugin-compiler.version>
-        <maven-plugin-surefire.version>3.5.4</maven-plugin-surefire.version>
+        <maven-plugin-surefire.version>3.5.6</maven-plugin-surefire.version>
         <maven-plugin-jar.version>3.5.0</maven-plugin-jar.version>
         <maven-plugin-shade.version>3.6.0</maven-plugin-shade.version>
     </properties>

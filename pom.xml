@@ -27,8 +27,9 @@
         <logback.version>1.5.12</logback.version>
         <junit.version>6.1.2</junit.version>
         <assertj.version>3.27.7</assertj.version>
+
         <mockito.version>5.23.0</mockito.version>
-        <byte-buddy.version>1.18.3</byte-buddy.version>
+        <byte-buddy.version>1.18.11</byte-buddy.version>
 
         <maven-plugin-clean.version>3.2.0</maven-plugin-clean.version>
         <maven-plugin-resources.version>3.4.0</maven-plugin-resources.version>

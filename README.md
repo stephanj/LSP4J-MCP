@@ -70,6 +70,57 @@ Add to your `.mcp.json`:
 }
 ```
 
+### Option 4: Docker
+
+Build the multi-stage image. It includes Java 21, the shaded MCP server, and a
+pinned Eclipse JDTLS distribution:
+
+```bash
+docker build -t lsp4j-mcp:local .
+```
+
+Run it over stdio and mount the Java project at `/workspace`:
+
+```bash
+docker run --rm -i \
+  --mount type=bind,source=/absolute/path/to/java/project,target=/workspace \
+  lsp4j-mcp:local
+```
+
+On Linux, use the host UID/GID when the language server needs to write project
+metadata into the mounted workspace:
+
+```bash
+docker run --rm -i \
+  --user "$(id -u):$(id -g)" \
+  --mount type=bind,source=/absolute/path/to/java/project,target=/workspace \
+  lsp4j-mcp:local
+```
+
+Example MCP configuration:
+
+```json
+{
+  "mcpServers": {
+    "java-lsp-docker": {
+      "command": "docker",
+      "args": [
+        "run",
+        "--rm",
+        "-i",
+        "--mount",
+        "type=bind,source=/absolute/path/to/java/project,target=/workspace",
+        "lsp4j-mcp:local"
+      ]
+    }
+  }
+}
+```
+
+The server uses stdio, so the image exposes no network port. Container logs are
+written to stderr while stdout remains reserved for the MCP protocol. The image
+runs as UID/GID `10001` by default and expects at least 1 GB of container memory.
+
 ## Project Structure
 
 ```

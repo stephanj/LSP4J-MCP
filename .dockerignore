@@ -1,0 +1,5 @@
+*
+!pom.xml
+!src/
+!src/**
+!docker-entrypoint.sh

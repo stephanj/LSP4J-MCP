@@ -29,7 +29,7 @@
         <assertj.version>3.27.7</assertj.version>
 
         <mockito.version>5.23.0</mockito.version>
-        <byte-buddy.version>1.18.11</byte-buddy.version>
+        <byte-buddy.version>1.18.12</byte-buddy.version>
 
         <maven-plugin-clean.version>3.5.0</maven-plugin-clean.version>
         <maven-plugin-resources.version>3.5.0</maven-plugin-resources.version>
